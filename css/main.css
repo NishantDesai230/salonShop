@@ -1,0 +1,65 @@
+.head
+{
+    background-color: black;
+}
+
+.navbar-dark .navbar-brand
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-dark .navbar-brand:hover
+{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    color: blanchedalmond;
+    padding-right: 36px;
+}
+
+.main
+{
+    padding: 10%;
+    padding-left: 0%;
+}
+
+.head2
+{
+background-image: url("../images/model4.jpg");
+background-size: cover;
+opacity: 0.9;
+}
+
+.btn a:hover
+{
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    background-color: pink;
+    border: pink 2px solid;
+}
+
+.p
+{
+    margin-top: 9%;
+}
+
+h1
+{
+    color:rgb(12, 4, 6);
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .navbar-dark .navbar-nav .nav-link
+    {
+        text-align: center;
+    }
+}
