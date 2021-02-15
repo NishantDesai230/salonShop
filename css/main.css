@@ -56,6 +56,28 @@ h1
     color:rgb(12, 4, 6);
 }
 
+.feature-icon {
+    color:#ef8172;
+    margin-bottom: 1rem;
+  }
+  .feature-icon:hover {
+    color:#ff4c68;
+  }
+  .feature-text {
+    color:#8f8f8f;
+  }
+  #features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 4%;
+  }
+  
+
 @media only screen and (max-width: 600px) 
 {
     .navbar-dark .navbar-nav .nav-link
