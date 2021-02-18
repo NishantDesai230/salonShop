@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NGO SIGN_UP</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="../css/sign_up.css">
+  	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<section class="head">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">Beauty Salon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                    </div>
+                    <div class="nav-item">
+                    <a class="nav-link" href="#pricing">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="./login.html">Log In</a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+<div class="container text-center">
+<h1>Beauty<span>Saloon</span></h1>
+</div>
+<div class="row justify-content-center">
+	<div class="col-12 col-md-6 col-lg-5 col-xl-4">
+		<div class="login-form text-center">
+			<div class="form-header">
+				<h3>Sign Up!</h3>
+			</div>
+			<div class = "card-body text-left">
+				<form action="/register" method="POST">
+					<div class="form-group input-style">
+						<label for="name">
+							Name
+							<span class="text-danger">*</span>
+						</label>
+						<input type="text" name="name" class="form-control">
+					</div>
+					<div class="form-group input-style">
+						<label for="number">
+							UserName
+							<span class="text-danger">*</span>
+						</label>
+						<input type="text" name="username" class="form-control" maxlength="10">
+					</div>
+					<div class="form-group input-style"><label for="number">Address</label>
+						<textarea name="address" type="text" class="form-control max-height-70"></textarea>
+					</div>
+					<label for="city">City <span class="text-danger">*</span></label>
+					<div class="form-group">
+  								<select class="form-control" id="sel1" name="city">
+    							<option>--SELECT CITY--</option>
+    							<option>SURAT</option>
+  								</select>
+					</div>
+					<label for="city">Area <span class="text-danger">*</span></label>
+					<div class="form-group">
+  								<select class="form-control" id="sel1" name="area">
+    							<option>--SELECT Area--</option>
+    							<option>ADAJAN</option>
+    							<option>RANDER</option>
+    							<option>CITY-LIGHT</option>
+    							<option>GHOD-DOD ROAD</option>
+    							<option>UDHNA</option>
+    							<option>VARACHA</option>
+    							<option>ATHWA-LINES</option>
+    							<option>VESU</option>
+  								</select>
+					</div>
+					<label for="password">
+						Password
+						<span class="text-danger">*</span>
+					</label>
+						<div class="form-group">
+							<input type="password" name="password" class="form-control">
+						</div>
+					</label>
+					<div class="form-group input-style mt-5">							
+						<button type="submit" class="btn btn-primary">Create Account</button>
+					</div>
+				</form>
+				<div class="signup text-center">
+					<p>Already have an account?<span><a href="/login">Log In</a></span></p>					
+				</div>
+		</div>
+	</div>
+</body>
+</html>

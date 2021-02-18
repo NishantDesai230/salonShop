@@ -11,6 +11,16 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.carousel-inner
+{
+    color: white;
+}
+
+h2
+{
+    font-weight: bold;
+}
+
 .navbar-dark .navbar-brand:hover
 {
     color: white;
@@ -56,6 +66,17 @@ h1
     color:rgb(12, 4, 6);
 }
 
+.img-circle
+{
+    border-radius: 50%;
+}
+
+#carouselExampleControls
+{
+background-color: rgb(228, 166, 197);
+}
+
+
 .feature-icon {
     color:#ef8172;
     margin-bottom: 1rem;
@@ -72,10 +93,13 @@ h1
     position: relative;
     z-index: 1;
   }
-  .feature-box {
+  .feature-box 
+  {
     text-align: center;
     padding: 4%;
   }
+
+  
   
 
 @media only screen and (max-width: 600px) 
