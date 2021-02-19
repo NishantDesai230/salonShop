@@ -147,6 +147,40 @@ background-color: rgb(228, 166, 197);
       color: black;
   }
 
+  .map
+  {
+      background-color: #f8f8f8;
+  }
+
+  .map-container-7
+    {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-7 iframe
+    {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+    /* contact us */
+
+    .card-body
+    {
+        background-color: #e6dfdf;
+    }
+
+    .contactus
+    {
+        background-color: #e6dfdf;
+        border-radius: red 2px solid;
+    }
+
 @media only screen and (max-width: 600px) 
 {
     .navbar-dark .navbar-nav .nav-link
