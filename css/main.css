@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 .head
 {
     background-color: black;
@@ -99,13 +102,61 @@ background-color: rgb(228, 166, 197);
     padding: 4%;
   }
 
-  
-  
+  #cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 3% 15% 5%;;
+  }
+  #cta h3{
+    color:white;
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
+
+  /* SERVICES */
+
+  .services
+  {
+    background-color: #f8f8f8;
+  }
+
+  hr
+  {
+      background-color: pink;
+      border-width: 2px;
+  }
+
+  .icon-classic
+  {
+    color:#ef8172;
+    margin-bottom: 1rem;
+  }
+
+  .card
+  {
+      border: pink solid 4px;
+  }
+
+  .card-text
+  {
+      color: black;
+  }
 
 @media only screen and (max-width: 600px) 
 {
     .navbar-dark .navbar-nav .nav-link
     {
         text-align: center;
+    }
+
+    .col-lg-4
+    {
+        padding-top: 2%;
+    }
+
+    .cards-sections
+    {
+        margin-left: 80px;
+
     }
 }
