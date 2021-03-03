@@ -205,3 +205,31 @@ background-color: rgb(228, 166, 197);
     height: 30px;
     width: 30px;
 } */
+
+.btn-outline-secondary
+{
+    border: solid rgb(201, 81, 25) 2px;
+
+}
+
+#right-arrow{
+    transform: translateX(0px);
+    animation-name:bounce-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce-right{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(11px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
