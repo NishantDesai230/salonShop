@@ -27,11 +27,11 @@ window.addEventListener('load', () => {
     var hair_highlight=parseInt(highlight);
 
     /* agad na page parthi levanu */
-    var qt1=parseInt(document.getElementById('result13').innerHTML);
-    var qt2=parseInt(document.getElementById('result23').innerHTML);
-    var qt3=parseInt(document.getElementById('result33').innerHTML);
+    // var qt1=parseInt(document.getElementById('result13').innerHTML);
+    // var qt2=parseInt(document.getElementById('result23').innerHTML);
+    // var qt3=parseInt(document.getElementById('result33').innerHTML);
 
-    var sub_total=(qt1*hair_cutting)+(qt2*hair_color)+(qt3*hair_highlight);
+    var sub_total=hair_cutting+hair_color+hair_highlight;
     var tax=(sub_total*18)/100;
 
 
