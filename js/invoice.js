@@ -18,18 +18,13 @@ window.addEventListener('load', () => {
     document.getElementById('cdate').innerHTML=cdate;
     document.getElementById("invoice-id").innerHTML=Math.floor(Math.random() * 101);
 
-    var cutting=document.getElementById('result12').innerHTML;
-    var color=document.getElementById('result22').innerHTML;
-    var highlight=document.getElementById('result32').innerHTML;
+    var cutting;
+    var color;
+    var highlight;
 
     var hair_cutting=parseInt(cutting);
     var hair_color=parseInt(color);
     var hair_highlight=parseInt(highlight);
-
-    /* agad na page parthi levanu */
-    // var qt1=parseInt(document.getElementById('result13').innerHTML);
-    // var qt2=parseInt(document.getElementById('result23').innerHTML);
-    // var qt3=parseInt(document.getElementById('result33').innerHTML);
 
     var sub_total=hair_cutting+hair_color+hair_highlight;
     var tax=(sub_total*18)/100;
@@ -38,17 +33,22 @@ window.addEventListener('load', () => {
     document.getElementById('sub').innerHTML=sub_total+"₹";
     document.getElementById('tax').innerHTML=tax+"₹";
     document.getElementById('gtotal').innerHTML=(sub_total+tax)+"₹";
+    
+});
 
-
-
-    function generatePDF() {
-        // Choose the element that our invoice is rendered in.
-        const element = document.getElementById("printInvoice");
-        // Choose the element and save the PDF for our user.
-        html2pdf()
-          .from(element)
-          .save();
-      }
-
-
-})
+window.onload = function(){
+    const a = document.getElementById("download");
+        a.addEventListener("click", () => {
+            const invoice = this.document.getElementById("invoice");
+            console.log(invoice);
+            console.log(window);
+            var opt = {
+                margin: 1,
+                filename: 'invoice.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf(invoice,opt).save();
+        })
+}

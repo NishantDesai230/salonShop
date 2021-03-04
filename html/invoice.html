@@ -26,6 +26,12 @@
           <!-- Java Script Linking -->
           <script src="../js/invoice.js"></script>
           <link rel="stylesheet" type="text/css" href="../css/invoice.css">
+
+          <!-- PDF -->
+          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+
+
           <title>Your booking</title>
     </head>
     <body>
@@ -61,7 +67,7 @@
             </div>
         </section>
         <section class="invoice">
-            <div class="jumbotron container">
+            <div class="jumbotron container" id="invoice">
                 <div class="row">
                   <div class="col-sm-6">
                     <img src="../images/thank you.jpg" height="203" width="200" style="border-radius:50% ;">
@@ -167,9 +173,13 @@
                         <div>NOTICE:</div>
                         <div class="notice">No any Extraa change on online payment</div>
                     </div>
+                    <br>
                     <footer>
                         Thank you once again.
                     </footer>
+                    <div class="btn btn-outline-primary" id="download">
+                    Download PDF &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>  
+                    </div>
                     </div>
         </section>
     </body>
