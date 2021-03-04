@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      
+        <!-- Bootstrap cdns -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+          <!-- Required meta tags-->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="Colorlib Templates">
+          <meta name="author" content="Colorlib">
+          <meta name="keywords" content="Colorlib Templates">
+      
+            <!-- Font Awsome -->
+          <script src="https://kit.fontawesome.com/455d39c75f.js" crossorigin="anonymous"></script>
+      
+          <!-- JQuery CDN-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+          <!-- Java Script Linking -->
+          <script src="../js/invoice.js"></script>
+          <link rel="stylesheet" type="text/css" href="../css/invoice.css">
+          <title>Your booking</title>
+    </head>
+    <body>
+        <section class="head">
+            <div class="container-fluid">
+                <!-- Nav Bar -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="">Beauty Salon</a>
+                    <button class="btn-main navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span style="display: none;" class="btn-close"><i class="close-icon fa fa-times  " aria-hidden="true"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <div class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                        </div>
+                        <div class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                          <a class="nav-link" href="#service">Our Services</a>
+                          </div>
+                        <div class="nav-item">
+                        <a class="nav-link" href="./html/login.html">Login</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="./html/sign_up.html">Sign Up</a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="invoice">
+            <div class="jumbotron container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img src="../images/thank you.jpg" height="203" width="200" style="border-radius:50% ;">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="col company-details">
+                        <h2 class="name">
+                            <a target="_blank" href="https://lobianijs.com">
+                            Beauty Salon
+                            </a>
+                        </h2>
+                        <div>G/203 Shubham park </div>
+                        <div>+91-9726609038</div>
+                        <div>18dce020@charusat.edu.in</div>
+                        <div>18dce021@charusat.edu.in</div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row contacts">
+                            <div class="col invoice-to">
+                                <div class="text-gray-light">INVOICE TO:</div>
+                                <h2 class="to" id="name"></h2>
+                                <div class="address" id="phone"></div>
+                                <div class="email" id="email"><p></p></div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="col invoice-details">
+                            <h1 class="invoice-id" style="display: inline-block;">INVOICE - </h1><h1 class="invoice-id" id="invoice-id" style="display: inline-block;"></h1>
+                            <br>
+                            <span>Current Date : </span>
+                            <div class="date" id="date" style="display: inline-block;"><p></p></div>
+                            <br>
+                            <span>Booking Date : </span>
+                            <div class="date" id="cdate" style="display: inline-block;"><p></p></div>
+                            <div class="time" id="time"><p></p></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty.</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td class="text-left" id="result11"><h3>Hair Cutting</h3>Our salon offers high-quality haircuts for both adults and children from highly trained, professional stylists</td>
+                        <td class="unit" id="result12">400.00₹</td>
+                        <td class="qty" id="result13">1</td>
+                        <td class="total">400.00₹</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td class="text-left" id="result21"><h3>Hair Color</h3>One of the most popular hairstyling services at Modern, coloring can completely change the way your haircut looks.</td>
+                        <td class="unit" id="result22">1000.00₹</td>
+                        <td class="qty" id="result23">1</td>
+                        <td class="total">1000.00₹</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td class="text-left" id="result31"><h3>Hair Highlighting</h3>Highlights are used to add extra dimension by bringing a lighter shade to your overall hair color so that it could look natural.</td>
+                        <td class="unit" id="result32">2500.00₹</td>
+                        <td class="qty" id="result33">1</td>
+                        <td class="total">2500.00₹</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="col-sm-3">
+                      <table>
+                          <tfoot>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">SUBTOTAL</td>
+                                    <td id="sub"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">GST 18%</td>
+                                    <td id="tax"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">GRAND TOTAL</td>
+                                    <td id="gtotal"></td>
+                                </tr>
+                            </tfoot>
+                      </table>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="thanks">
+                      <h2 class="text-center">Thank You!</h2>
+                  </div>
+                    <div class="notices">
+                        <div>NOTICE:</div>
+                        <div class="notice">No any Extraa change on online payment</div>
+                    </div>
+                    <footer>
+                        Thank you once again.
+                    </footer>
+                    </div>
+        </section>
+    </body>
+</html>
