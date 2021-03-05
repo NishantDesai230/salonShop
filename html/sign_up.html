@@ -29,6 +29,7 @@
 
     <!-- Java Script Linking -->
     <script src="../js/app.js"></script>
+    <script src="../js/sign_up.js"></script>
 
     <!-- Title Page-->
     <title>Slot Booking</title>
@@ -88,7 +89,20 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Sign Up</h2>
-                    <form method="POST">
+                    <form name="form" method="POST" onsubmit="return validateKey()">
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="cust_owner" id="3">
+                                    <option id="1" selected="selected">Customer</option>
+                                    <option id="2" value="owner">Owner (Only For Salon Employees*)</option>
+                                </select>
+                                <div class="select-dropdown"></div> 
+                            </div>
+                        </div>
+
+                            <div id = "k" class="key input-group"  style="display: none;">
+                                <input class="input--style-3" type="password" placeholder="Enter Key" name="key">
+                            </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Name" name="name">
                         </div>
@@ -113,7 +127,7 @@
                         </div>
                         <br>
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Sign In</button>
+                            <button class="btn btn--pill btn--green" type="submit" value="register">Sign In</button>
                         </div>
                     </form>
                 </div>

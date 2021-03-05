@@ -567,3 +567,8 @@ input {
 {
   background: rgb(40, 40, 168);
 }
+
+.key
+{
+  display: block;
+}
