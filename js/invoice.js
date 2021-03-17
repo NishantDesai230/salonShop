@@ -52,3 +52,4 @@ window.onload = function(){
             html2pdf(invoice,opt).save();
         })
 }
+
